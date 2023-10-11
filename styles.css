@@ -1,0 +1,57 @@
+body{
+    font-family: helvetica;
+    font-size: 16px;
+    line-height: 1.5;
+    margin: 0;
+    background-color: gray;
+    color: black;
+}
+.page-header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: bisque;
+}
+.page-header ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    list-style: none;
+}
+.page-header a{
+    display: block;
+    padding: 0.5em;
+    text-decoration: none;
+    color: black;
+}
+#our-mission{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    margin: auto;
+}
+#find-your-trainer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.input-boxes{
+    border: solid 1px rgb(0, 0, 0);
+    margin: .5em;
+    padding: .5em;
+}
+.input-boxes p{
+    margin: 0;
+}
+#submit-button{
+    border-radius: 20px;
+    border: none;
+    padding: .5em;
+    margin: .5em;
+    width: 100px;
+    height: 30px;
+    background-color: dodgerblue;
+}
+#submit-button:hover{
+    background-color: tomato;
+}
