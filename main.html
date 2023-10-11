@@ -17,35 +17,41 @@
     </header>
     <main>
         <div id="our-mission">
-            <p>foo bar foo bar foo bar foo bar foo bar foo bar foo bar foo bar foo bar foo bar foo bar foo bar foo bar foo bar foo bar foo bar foo bar foo bar foo bar foo bar foo bar foo bar foo bar foo bar foo bar foo ba</p>
+            <p>Our mission is to make personal training a more viable option to everyone. We wish to bring personal training to every individual who goes to the gym. </p><br>
+            <p>If you choose to use our product we will pair you with personal trainers that specialize in your preferred fitness type.</p>
         </div>
         <div id="find-your-trainer">
             <form>
                 <label for="fname">First name:</label>
-                    <input type="text" id="fname" name="fname"><br>
+                    <input type="text" id="fname" name="fname" required><br>
                 <label for="lname">Last name:</label>
-                    <input type="text" id="lname" name="lname"><br>
+                    <input type="text" id="lname" name="lname" required><br>
+                <label for="email">Enter your email:</label>
+                    <input type="email" id="email" name="email" required><br>
+                <label for="city">Enter the current city you live in:</label>
+                    <input type="text" id="city" name="city" required><br>
                 <label for="height">Height in inches:</label>
-                    <input type="text" id="height" name="height"><br>
+                    <input type="number" id="height" name="height" min="1" max="99" required><br>
                 <label for="weight">Weight in pounds:</label>
-                    <input type="text" id="weight" name="weight"><br>
+                    <input type="number" id="weight" name="weight" min="1" max="900" required><br>
                 <p>Gender</p>
                 <label for="male">male</label>
                     <input type="radio" name="male" id="male"><br>
                 <label for="female">female</label>
                     <input type="radio" name="female" id="female"><br>
                 <label for="prefer-not-to-say">prefer not to say</label>
-                    <input type="radio" name="prefer-not-to-say" id="prefer-not-to-say"><br>
-                <!-- Use <select> tag to create a dropdown menu for fitness goals for the form -->
+                    <input type="radio" name="prefer-not-to-say" id="prefer-not-to-say" checked><br>
                 <label for="fitness-goals">What are your fitness goals?</label>
-                    <select name="fitness-goals" id="fitness-goals">
+                    <select name="fitness-goals" id="fitness-goals" required>
+                        <option value="select-one" disabled autofocus>select one</option>
                         <option value="lose-fat">Lose fat</option>
                         <option value="gain-muscle">Gain Muscle</option>
                         <option value="build-endurance">Build endurance</option>
                         <option value="build-muscle-and-lose-fat">Build muscle and lose fat</option>
                     </select><br>
                 <label for="fitness-type">How do you like to workout?</label>
-                    <select name="fitness-type" id="fitness-type">
+                    <select name="fitness-type" id="fitness-type" required>
+                        <option value="select-one" autofocus disabled>select one</option>
                         <option value="weight-training">Weight training</option>
                         <option value="cardio">Cardio</option> 
                         <option value="HIIT-training">High intensity interval training</option>
