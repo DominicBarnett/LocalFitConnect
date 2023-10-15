@@ -23,7 +23,7 @@
         </div>
         <div id="find-your-trainer">
             <h4>Find your trainer</h4>
-            <form>
+            <form method="POST" action="/send_email">
                 <div class="input-boxes">
                 <label for="fname">First name:</label>
                     <input type="text" id="fname" name="fname" required><br>
@@ -51,11 +51,11 @@
                 <div class="input-boxes">
                     <p>Gender: </p>
                     <label for="male">Male</label>
-                        <input type="radio" name="male" id="male"><br>
+                        <input type="radio" name="gender" id="male" value="Male"><br>
                     <label for="female">Female</label>
-                        <input type="radio" name="female" id="female"><br>
+                        <input type="radio" name="gender" id="female" value="Female"><br>
                     <label for="prefer-not-to-say">Prefer not to say</label>
-                        <input type="radio" name="prefer-not-to-say" id="prefer-not-to-say" checked><br>
+                        <input type="radio" name="gender" id="prefer-not-to-say" value="Prefer not to say" checked><br>
                 </div>  
                 <div class="input-boxes"> 
                     <label for="fitness-goals">What are your fitness goals?</label>

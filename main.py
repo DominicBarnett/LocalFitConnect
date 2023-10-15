@@ -24,14 +24,12 @@ def send_email():
     email = request.form['email']
     height = request.form['height']
     weight = request.form['weight']
-    male = request.form['male']
-    female = request.form['female']
-    PreferNotToSay= request.form['prefer-not-to-say']
+    gender = request.form['gender']
     FitnessGoals = request.form['fitness-goals']
     FitnessType = request.form['fitness-type']
     
     msg = Message(subject="trainer form",sender=email,recipients=['throw3310@gmail.com'])
-    msg.body = fname + lname + city + email + height + weight + male + female + PreferNotToSay + FitnessGoals + FitnessType
+    msg.body = "Name: " + fname + " " + lname + " " + "\n" + "City: " + city + "\n" + email + "\n" + "Height in inches: " + height + "\n" + "Weight in lbs: " + weight + "\n" + gender + "\n" + "Fitness Goals: " + FitnessGoals + "\n" + "Fitness Type: " + FitnessType
     mail.send(msg)
     return 'Email was sent successfully'
 
