@@ -69,3 +69,17 @@ footer{
     justify-content: space-between;
     list-style: none;
 }
+form{
+    padding: .5em;
+    margin: 1em;
+}
+#find-your-trainer h4{
+    margin-bottom: 0;
+}
+#response-message{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}

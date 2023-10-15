@@ -31,7 +31,7 @@ def send_email():
     msg = Message(subject="trainer form",sender=email,recipients=['throw3310@gmail.com'])
     msg.body = "Name: " + fname + " " + lname + " " + "\n" + "City: " + city + "\n" + email + "\n" + "Height in inches: " + height + "\n" + "Weight in lbs: " + weight + "\n" + gender + "\n" + "Fitness Goals: " + FitnessGoals + "\n" + "Fitness Type: " + FitnessType
     mail.send(msg)
-    return 'Email was sent successfully'
+    return render_template("SuccessfulSend.html")
 
 
 
