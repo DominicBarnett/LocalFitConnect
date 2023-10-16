@@ -1,4 +1,4 @@
-# LocalFitConnect
+# MyTrainerMatch
  Personal training website
 
 A website that takes the users info
